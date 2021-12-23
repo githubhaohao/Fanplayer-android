@@ -1,0 +1,14 @@
+prefix=/home/hoc/worksapce/fanplayer-master/player-android/jni/_install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 6.82.100
+Requires: libavutil >= 55.58.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavfilter -L/home/hoc/worksapce/fanplayer-master/player-android/jni/_install/lib -lssl -lcrypto -ldl -lm -lz -pthread
+Libs.private: 
+Cflags: -I${includedir}

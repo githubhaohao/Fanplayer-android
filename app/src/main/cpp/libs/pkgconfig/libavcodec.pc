@@ -1,0 +1,14 @@
+prefix=/home/hoc/worksapce/fanplayer-master/player-android/jni/_install
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 57.89.100
+Requires: libswresample >= 2.7.100, libavutil >= 55.58.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -L/home/hoc/worksapce/fanplayer-master/player-android/jni/_install/lib -lssl -lcrypto -ldl -lm -lz -pthread
+Libs.private: 
+Cflags: -I${includedir}
